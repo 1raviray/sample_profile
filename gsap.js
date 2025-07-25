@@ -54,7 +54,7 @@ function runanimation(){
           start:"top 85%",
           end:"top 45%",
           scrub:true,
-          markers:true
+          // markers:true
         }
       })
     })
