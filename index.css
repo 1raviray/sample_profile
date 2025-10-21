@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -28,6 +27,11 @@ html.lenis body {
   transition-duration: 1ms;
   transition-behavior: allow-discrete;
 }
+#influencerNav{
+  position: sticky;
+  top:5%;
+  z-index: 99;
+}
 .navbar {
   height: 80px !important;
 }
@@ -40,25 +44,26 @@ html.lenis body {
   line-height: 36.46px;
   letter-spacing: 14.87px;
   word-wrap: break-word;
-    will-change: transform, opacity;  
-  }
-  #hero {
-    position: absolute;
-    top: 0;
-    left: -16%;
-    z-index: 10;
-    will-change: transform, opacity;
-  }
-  .hero1 h2,.hero1 h5,.hero1 p{
-    will-change: transform, opacity;
-
-  }
-@keyframes scaletransX{
-  0%{
-    transform:translateX(-100px);
+  will-change: transform, opacity;
+}
+#hero {
+  position: absolute;
+  top: 0;
+  left: -16%;
+  z-index: 10;
+  will-change: transform, opacity;
+}
+.hero1 h2,
+.hero1 h5,
+.hero1 p {
+  will-change: transform, opacity;
+}
+@keyframes scaletransX {
+  0% {
+    transform: translateX(-100px);
     /* scale:0 */
   }
-  100%{
+  100% {
     transform: translateX(0);
     /* scale:1 */
     /* translate:0px ; */
@@ -94,6 +99,7 @@ html.lenis body {
   top: 30%;
   transform: scale(1.7);
   display: inline-block;
+  z-index: 101;
 }
 
 .hero1 {
@@ -187,7 +193,7 @@ html.lenis body {
   background-size: cover;
   height: 80vh;
 }
-.project1{
+.project1 {
   will-change: transform, opacity;
 }
 .projectImg h1 {
@@ -561,6 +567,291 @@ html.lenis body {
   text-transform: uppercase;
   word-wrap: break-word;
 }
+
+/* -------------influencer page-------------- */
+.influencer-nav .nav-item {
+  font-size: 16.8px;
+  font-family: afacad;
+  font-weight: 400;
+  text-transform: none !important;
+  word-wrap: break-word;
+}
+.influencer-nav .nav-link {
+  /* transition: color 0.3s ease; */
+}
+
+.influencer-nav .nav-link.active {
+  color: orange !important;
+  font-weight: 600;
+}
+
+
+.sectionHeight{
+  height: 100vh;
+}
+#Overview h3 {
+  color: #202020;
+  font-size: 20px;
+  font-family: "Boldonse", system-ui;
+}
+#Overview h2 {
+  color: #202020;
+  font-size: 34px;
+  font-family: "Inter", sans-serif;
+}
+.fullCardBg {
+  background-color: #ffdcba;
+}
+.yellowCard {
+  width: 100%;
+  height: 100%;
+  background-image: url("./Assets/yellowCard.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sticky-note {
+  height: 180px;
+  background-color: #FFEDA0;
+  border-radius: 5px 5px 0 0;
+}
+
+.endBar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: calc(100% - 35px);
+  height: 35px;
+  background-color: #FFEDA0;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 6px 10px rgba(100, 100, 111, 0.2);
+  z-index: 1;
+}
+.endTrg {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px 0 0 0;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background-color: #F0CD1A;
+  z-index: 2;
+}
+
+#TheProposal h4{
+  color: #202020;
+  font-size: 20px;
+  font-family: afacad;
+}
+.card-stack {
+  height: 245px;
+  position: relative;
+  background-color: #e2e8f0;;
+  border-radius: 20px;
+  clip-path: path('M 0% 8% A 5.7% 8% 0 0 1 5.7% 0% L 38.6% 0% Q 50% 20% 61.4% 0% L 94.3% 0% A 5.7% 8% 0 0 1 100% 8% L 100% 91.8% A 5.7% 8% 0 0 1 94.3% 100% L 5.7% 100% A 5.7% 8% 0 0 1 0% 91.8% Z');
+}
+.card-stack:hover {
+  transform: translateY(-5px);
+}
+.card-stack::before {
+  content: '';
+  position: absolute;
+  top: -22%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125px;
+  height: 100px;
+  background: #fff;
+  border-radius:0 0 100px 100px;
+  z-index: 0;
+}
+.card-stack img{
+  position: absolute;
+  top: -24%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.ux2 img{
+  top: -36% !important;
+  left: 54%;
+}
+.card-stack p{
+  font-family: afacad;
+  font-size: 20px;
+}
+#EmpathyDiscovery p{
+  color: #52525b;
+}
+.empathyCard{
+  height: 330px;
+  background-color: #f1f5f9;
+}
+.empathyCard span{
+  font-family: poppins;
+  font-size: 17px;
+}
+.empathyCard p{
+    font-size: 20px;
+}
+#CompetitorDeepDive h2{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 42px;
+}
+#CompetitorDeepDive ul li{
+  font-size: 28px;
+}
+#Design span{
+  font-size: 15.45px;
+}
+#Design p{
+  font-size: 20px;
+}
+#Design h5{
+  color: #424955;
+  font-size: 25px;
+}
+.DesignBg{
+  background-image: url(./Assets/Container\ 103.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#DesignLast h3{
+  font-family: "afacad";
+  font-size: 28px;
+}
+#DesignLast li{
+  font-family: "afacad";
+  font-size: 24px;
+}
+.workColor{
+  background-color: #F6F8F9;
+}
+.workColor h6{
+  font-family: inter;
+  font-size: 17px;
+  color: #6E7C87;
+}
+.workColor p{
+  font-family: inter;
+  font-size: 16px !important;
+  color: #252C32;
+}
+.workColor span{
+  font-family: inter;
+  color: #835101;
+  font-size: 14.61px;
+  background-color: #f8dd4e;
+}
+.indent{
+  text-indent: 30px;
+}
+.remin .projects h5{
+  font-family: "afacad";
+}
+.workExperience h5{
+  color: #042085;
+  font-family: "poppins";
+}
+.workExperience h6{
+  color: #828282;
+  font-family: "poppins";
+  font-size: 16.23px;
+}
+.workExperience h1{
+  color: #141414;
+  font-family: "poppins";
+  font-size: 35px;
+}
+.workExperience h2,h3,h5{
+  color: #042085;
+  font-family: "poppins";
+  font-size: 28px;
+}
+.workExperience h3{
+  color: #ff5900;
+}
+.workExperience p,li{
+  color: #111111;
+  font-family: "poppins";
+  font-size: 24px;
+}
+.lineSeperator1{
+  height: 17%;
+  width: 1px;
+  background-color: #828282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lineSeperator{
+  height: 31%;
+  width: 1px;
+  background-color: #828282;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.influencer-nav .nav-link.design-persist {
+  color: orange !important;
+  font-weight: 700 !important;
+}
+
+/* .browser-card {
+  width: 500px;
+  background: #fff;
+  border-radius: 12px;box-shadow: 
+  0 4px 6px rgba(0, 0, 0, 0.05),
+  0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.browser-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f9fafb;
+  border-bottom: 1px solid #eee;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.browser-content {
+  padding: 25px 30px;
+  color: #111;
+}
+
+.title {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.browser-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.browser-card li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 15px;
+} */
 
 /* Laptops */
 

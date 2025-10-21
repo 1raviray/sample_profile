@@ -1,23 +1,50 @@
-// // Initialize Lenis
-// const lenis = new Lenis({
-//   duration:2,
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".influencer-nav .nav-link");
+  const sections = Array.from(navLinks).map(link => {
+    const id = link.getAttribute("href").slice(1);
+    return document.getElementById(id);
+  });
 
-// // Use requestAnimationFrame to continuously update the scroll
-// function raf(time) {
-//   lenis.raf(time);
-//   requestAnimationFrame(raf);
-// }
+  const designLink = document.querySelector('.nav-link[href="#Design"]');
+  const designSection = document.getElementById("Design");
 
-// requestAnimationFrame(raf);
+  function updateActiveLink() {
+    let scrollPos = window.scrollY || document.documentElement.scrollTop;
+    let windowHeight = window.innerHeight;
+    let documentHeight = document.body.offsetHeight;
 
+    // If near bottom of the page, keep Design highlighted
+    if (scrollPos + windowHeight >= documentHeight - 10) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      designLink.classList.add("design-persist");
+      return;
+    }
 
-// lenis.on('scroll', ScrollTrigger.update);
+    // Remove all highlights initially
+    navLinks.forEach(link => link.classList.remove("active", "design-persist"));
 
-// gsap.ticker.add((time) => {
-//   lenis.raf(time * 1000);
-// });
+    // Loop through sections to find current view
+    for (let i = 0; i < sections.length; i++) {
+      const sec = sections[i];
+      const rect = sec.getBoundingClientRect();
+      if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        navLinks[i].classList.add("active");
 
-// gsap.ticker.lagSmoothing(0);
+        // if we’ve passed Design, keep it highlighted
+        if (sec.id === "Design") {
+          navLinks[i].classList.add("design-persist");
+        }
+      }
+    }
 
+    // If scrolled past Design, persist highlight
+    const designBottom = designSection.getBoundingClientRect().bottom;
+    if (designBottom < 0) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      designLink.classList.add("design-persist");
+    }
+  }
 
+  window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink(); // run on load
+});
