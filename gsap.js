@@ -53,7 +53,7 @@ function runanimation(){
         scrollTrigger:{
           trigger:projects,
           start:"top 90%",
-          end:"top 45%",
+          end:"top 60%",
           scrub:true,
           // markers:true
         }
