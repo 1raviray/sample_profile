@@ -1,0 +1,75 @@
+@media (max-width: 1400px) {
+  .navbar {
+    height: 100% !important;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
+  .nav-link {
+    padding: 0 !important;
+  }
+
+  .headerPhone {
+    right: 2%;
+  }
+  .headerPhone1 {
+    right: 2%;
+  }
+  #hero {
+    width: 45%;
+  }
+  .hero1 {
+    margin-top: 12em;
+  }
+  .hero1 h2 {
+    font-size: 41px;
+  }
+  .hero1 h5 {
+    font-size: 27px;
+  }
+  .hero1 p {
+    font-size: 21px;
+  }
+  .hero-button {
+    font-size: 15px;
+    height: 49px;
+  }
+  #hero2 {
+    width: 70%;
+  }
+  .projectImg {
+    background-position: top center;
+    height: 60vh;
+  }
+  .projectImg h1 {
+    font-size: 50px;
+  }
+  .tools h5 {
+    font-size: 20.64px;
+  }
+  .tools p {
+    font-size: 15px;
+  }
+  .contact h1 {
+    font-size: 38px;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar {
+      height: 100% !important;
+    }
+    .headerPhone,
+    .headerPhone1 {
+      display: none;
+    }
+    .headerPhoneres {
+      padding-left: 1em;
+      width: 5em;
+    }
+  }

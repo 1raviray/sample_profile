@@ -41,24 +41,6 @@ function runanimation(){
     tl.fromTo(".hero2 a", { y: 20, opacity: 0 }, {
       y: 0, opacity: 1, duration: 0.4, stagger: 0.1, ease: "back.in"
     });
-    
-
-    gsap.set(".projects",{clearProps:"all"})
-    document.querySelectorAll(".projects").forEach((projects) => {
-      gsap.from(projects,{
-        y:100,
-        opacity:0,
-        scale:0,
-        duration:.3,
-        scrollTrigger:{
-          trigger:projects,
-          start:"top 90%",
-          end:"top 60%",
-          scrub:true,
-          // markers:true
-        }
-      })
-    })
 
     gsap.from("#tools img",{
       opacity:0,scale:0,scrollTrigger:{trigger:"#tools",start:"top 95%",end:"top 50%",scrub:true}
@@ -84,6 +66,22 @@ function animateWithGSAP() {
   return;
   }
   
+  gsap.set(".projects",{clearProps:"all"})
+    document.querySelectorAll(".projects").forEach((projects) => {
+      gsap.from(projects,{
+        y:100,
+        opacity:0,
+        scale:0,
+        duration:.3,
+        scrollTrigger:{
+          trigger:projects,
+          start:"top 90%",
+          end:"top 50%",
+          scrub:true,
+          // markers:true
+        }
+      })
+    })
   
   // Before animating, set initial state so gsap.from has something to animate from
   if (introP) {
