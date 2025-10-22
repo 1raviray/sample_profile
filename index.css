@@ -191,7 +191,7 @@ html.lenis body {
 .projectImg {
   background-image: url("./Assets/proectsSection.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   height: 80vh;
 }
 .project1 {
