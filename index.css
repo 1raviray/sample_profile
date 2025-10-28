@@ -32,6 +32,13 @@ html.lenis body {
   top:5%;
   z-index: 99;
 }
+.navbar-nav-scroll {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+.navbar-nav-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Edge */
+}
 .navbar {
   height: 80px !important;
 }
@@ -191,7 +198,7 @@ html.lenis body {
 .projectImg {
   background-image: url("./Assets/proectsSection.png");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   height: 80vh;
 }
 .project1 {
@@ -569,6 +576,27 @@ html.lenis body {
   word-wrap: break-word;
 }
 
+.projP{
+  font-family: afacad;
+  font-size: 29.6px;
+}
+.brand h3{
+  font-family: afacad;
+  color: #181717;
+  font-size: 42.3px;
+}
+.brand p{
+  color: #181717;
+  font-family: afacad;
+  font-size: 26.73px;
+}
+#projTop img{
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#projTop img:hover{
+  scale: 1.05;
+}
+
 /* -------------influencer page-------------- */
 .influencer-nav .nav-item {
   font-size: 16.8px;
@@ -577,9 +605,9 @@ html.lenis body {
   text-transform: none !important;
   word-wrap: break-word;
 }
-.influencer-nav .nav-link {
-  /* transition: color 0.3s ease; */
-}
+/* .influencer-nav .nav-link {
+  transition: color 0.3s ease;
+} */
 
 .influencer-nav .nav-link.active {
   color: orange !important;
@@ -678,6 +706,12 @@ html.lenis body {
   top: -36% !important;
   left: 54%;
 }
+.dLarge{
+  display: block;
+}
+.dSmall{
+  display: none;
+}
 .card-stack p{
   font-family: afacad;
   font-size: 20px;
@@ -726,6 +760,9 @@ html.lenis body {
 #DesignLast li{
   font-family: "afacad";
   font-size: 24px;
+}
+.blueColor{
+  background-color: #B7F0FF;
 }
 .workColor{
   background-color: #F6F8F9;

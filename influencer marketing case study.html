@@ -98,24 +98,31 @@
             class="navbar-toggler d-lg-none"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="mainNav">
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0 pe-lg-5">
-              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-              <li class="nav-item">
+              <li class="nav-item d-flex justify-content-center py-3">
+                <a class="nav-link" href="/" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item d-flex justify-content-center py-3">
                 <a class="nav-link" href="project.html">PROJECT</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-flex justify-content-center py-3">
                 <a class="nav-link" href="about.html">ABOUT</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Assets/Karuna_Resume.pdf">RESUME</a>
+              <li class="nav-item d-flex justify-content-center py-3">
+                <a
+                  class="nav-link"
+                  href="Assets/Karuna_Resume.pdf"
+                  target="_blank"
+                  >RESUME</a
+                >
               </li>
             </ul>
             <div class="phones">
@@ -137,6 +144,7 @@
               rel="noopener noreferrer"
               target="_blank"
               href="mailto:karunanjali.gurram@gmail.com"
+              class="d-flex justify-content-center py-sm-2"
             >
               <img
                 class="headerPhoneres d-lg-none"
@@ -149,7 +157,10 @@
     </header>
 
     <!-- 👇 ScrollSpy Navbar -->
-    <nav class="navbar navbar-expand-sm bg-white" id="influencerNav">
+    <nav
+      class="navbar navbar-expand bg-white  navbar-nav-scroll"
+      id="influencerNav"
+    >
       <div class="container">
         <button
           class="navbar-toggler d-lg-none"
@@ -163,7 +174,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="influencerCollapse">
-          <ul class="navbar-nav influencer-nav mx-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav influencer-nav mx-auto mt-lg-0 text-nowrap">
             <li class="nav-item">
               <a class="nav-link w-100 m-0" href="#Overview">Overview</a>
             </li>
@@ -171,10 +182,14 @@
               <a class="nav-link w-100 m-0" href="#TheProposal">The Proposal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link w-100 m-0" href="#UXChallenges">UX Challenges</a>
+              <a class="nav-link w-100 m-0" href="#UXChallenges"
+                >UX Challenges</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link w-100 m-0" href="#AudienceTiming">Audience & Timing</a>
+              <a class="nav-link w-100 m-0" href="#AudienceTiming"
+                >Audience & Timing</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link w-100 m-0" href="#EmpathyDiscovery"
@@ -196,7 +211,7 @@
 
     <!-- 👇 Sections for ScrollSpy -->
     <section id="Overview" class="container py-4">
-      <div class="fullCardBg pt-4 rounded-4">
+      <div class="fullCardBg pt-4 rounded-4 overflow-hidden">
         <h3>Influencer Marketing App That Empowers Authentic Collaboration</h3>
         <div class="d-flex justify-content-center">
           <img
@@ -206,7 +221,7 @@
             srcset=""
           />
           <img
-            class="img2 mt-auto"
+            class="img2 mt-auto pe-2"
             src="./Assets/OverviewLap.png"
             alt=""
             srcset=""
@@ -243,7 +258,7 @@
           <img class="" src="./Assets/Vector 16.png" />
         </h1>
         <div id="proposed" class="row mb-5 mt-4">
-          <div class="col-10 col-lg-3 my-3 position-relative">
+          <div class="col-12 col-md-10 col-lg-3 my-5 position-relative">
             <div class="sticky-note shadow">
               <div class="pt-5 px-2 m-auto pb-0">
                 <h4>A match-making engine:</h4>
@@ -257,7 +272,7 @@
               <span class="endTrg"></span>
             </div>
           </div>
-          <div class="col-10 col-lg-3 my-3 position-relative">
+          <div class="col-12 col-md-10 col-lg-3 my-5 position-relative">
             <div class="sticky-note shadow">
               <div class="pt-5 px-2 m-auto pb-0">
                 <h4>Creator monetization tools:</h4>
@@ -271,7 +286,7 @@
               <span class="endTrg"></span>
             </div>
           </div>
-          <div class="col-10 col-lg-3 my-3 position-relative">
+          <div class="col-12 col-md-10 col-lg-3 my-5 position-relative">
             <div class="sticky-note shadow">
               <div class="pt-5 px-2 m-auto pb-0">
                 <h4>Collaboration dashboard:</h4>
@@ -285,7 +300,7 @@
               <span class="endTrg"></span>
             </div>
           </div>
-          <div class="col-10 col-lg-3 my-3 position-relative">
+          <div class="col-12 col-md-10 col-lg-3 my-5 position-relative">
             <div class="sticky-note shadow">
               <div class="pt-5 col-9 px-2 m-auto pb-0">
                 <h4>Emotional UX:</h4>
@@ -304,42 +319,42 @@
     </section>
 
     <section id="UXChallenges" class="container my-5">
-      <div class="col-10 m-auto">
-        <h1>UX Challenges</h1>
+      <div class="col-12 col-md-10 m-auto">
+        <h1 class="my-5">UX Challenges</h1>
         <div class="row">
-          <div class="col-10 col-lg-6 my-5">
+          <div class="col-12 col-md-10 col-lg-6 my-5">
             <div class="d-flex card-stack">
               <img
                 src="./Assets/Purple and Yellow 3D Illustration Online Course Presentation (7) 1.png"
               />
-              <p class="m-auto col-7 p-2 mx-auto">
+              <p class="m-auto col-9 p-2 mx-auto">
                 Making the collaboration process feel less like "task
                 management" and more like a creative partnership
               </p>
             </div>
           </div>
-          <div class="col-10 col-lg-6 my-5">
+          <div class="col-12 col-md-10 col-lg-6 my-5">
             <div class="d-flex card-stack ux2">
               <img src="./Assets/ux2 (2).png" />
-              <p class="m-auto col-7 p-2 mx-auto">
+              <p class="m-auto col-9 p-2 mx-auto">
                 Balancing the needs of two very different personas (influencer
                 vs. brand manager)
               </p>
             </div>
           </div>
-          <div class="col-10 col-lg-6 my-5">
+          <div class="col-12 col-md-10 col-lg-6 my-5">
             <div class="d-flex card-stack">
               <img src="./Assets/ux3.png" />
-              <p class="m-auto col-7 p-2 mx-auto">
+              <p class="m-auto col-9 p-2 mx-auto">
                 Capturing key campaign data without making it feel like a
                 form-filling chore
               </p>
             </div>
           </div>
-          <div class="col-10 col-lg-6 my-5">
+          <div class="col-12 col-md-10 col-lg-6 my-5">
             <div class="d-flex card-stack">
               <img src="./Assets/ux4.png" />
-              <p class="m-auto col-7 p-2 mx-auto">
+              <p class="m-auto col-9 p-2 mx-auto">
                 Standing out in a space crowded with talent databases, but poor
                 in creative tools
               </p>
@@ -351,59 +366,130 @@
 
     <section id="AudienceTiming" class="container">
       <h2>Audience & Timing</h2>
-      <div class="row">
-        <div class="col-2 my-auto p-0">
-          <img src="Assets/Ellipse 40.png" class="ms-auto d-flex" alt="" />
-        </div>
-
-        <div class="col-4">
-          <img src="Assets/Ellipse 45.png" class="py-3" alt="" srcset="" />
-          <div class="shadow p-3 p-lg-3 col-10 rounded">
-            <p class="p-3 p-lg-4 col-10 m-auto">
-              <span class="fw-semibold" style="color: #ff8610"
-                >For Influencers: </span
-              >Micro to mid-tier creators looking to monetize meaningfully, not
-              just transact
-            </p>
+      <div class="dLarge">
+        <div class="row">
+          <div class="col-2 my-auto p-0">
+            <img src="Assets/Ellipse 40.png" class="ms-auto d-flex" alt="" />
           </div>
-          <img
-            src="Assets/Ellipse 44.jpg"
-            class="mt-4 me-auto d-flex"
-            alt=""
-            srcset=""
-          />
-        </div>
 
-        <div class="col-4">
-          <img
-            src="Assets/Ellipse 41.jpg"
-            class="p-3 pt-5 d-flex ms-auto"
-            alt=""
-            srcset=""
-          />
-          <div class="shadow p-3 mt-3 p-lg-3 col-10 m-auto rounded bg-white">
-            <p class="p-3 p-lg-4 col-10 m-auto">
-              <span class="fw-semibold" style="color: #ff8610"
-                >For Brands: </span
-              >D2C and mid-sized marketing teams wanting better reach, deeper
-              engagement, and less operational chaos.
-            </p>
+          <div class="col-4">
+            <img src="Assets/Ellipse 45.png" class="py-3" alt="" srcset="" />
+            <div class="shadow p-3 p-lg-3 col-10 rounded">
+              <p class="p-3 p-lg-4 col-10 m-auto">
+                <span class="fw-semibold" style="color: #ff8610"
+                  >For Influencers: </span
+                >Micro to mid-tier creators looking to monetize meaningfully,
+                not just transact
+              </p>
+            </div>
+            <img
+              src="Assets/Ellipse 44.jpg"
+              class="mt-4 me-auto d-flex"
+              alt=""
+              srcset=""
+            />
           </div>
-          <img
-            src="Assets/Ellipse 43.jpg"
-            class="mt-4 mx-auto pe-5 d-flex"
-            alt=""
-            srcset=""
-          />
-        </div>
 
-        <div class="col-2 my-auto p-0">
-          <img
-            src="Assets/Ellipse 42.jpg"
-            class="position-relative"
-            alt=""
-            style="transform: translateX(-110%); z-index: -1"
-          />
+          <div class="col-4">
+            <img
+              src="Assets/Ellipse 41.jpg"
+              class="p-3 pt-5 d-flex ms-auto"
+              alt=""
+              srcset=""
+            />
+            <div class="shadow p-3 mt-3 p-lg-3 col-10 m-auto rounded bg-white">
+              <p class="p-3 p-lg-4 col-10 m-auto">
+                <span class="fw-semibold" style="color: #ff8610"
+                  >For Brands: </span
+                >D2C and mid-sized marketing teams wanting better reach, deeper
+                engagement, and less operational chaos.
+              </p>
+            </div>
+            <img
+              src="Assets/Ellipse 43.jpg"
+              class="mt-4 mx-auto pe-5 d-flex"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="col-2 my-auto p-0">
+            <img
+              src="Assets/Ellipse 42.jpg"
+              class="position-relative"
+              alt=""
+              style="transform: translateX(-110%); z-index: -1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="dSmall">
+        <div class="row">
+          <div class="col-2 my-2 p-0 w-100">
+            <img src="Assets/Ellipse 45.png" class="mx-auto d-flex" alt="" />
+          </div>
+
+          <div class="col-12 col-md-4 responsiveIngDeco mt-4">
+            <div
+              class="shadow p-3 p-lg-3 col-10 mx-auto col-md-10 rounded position-relative z-2"
+            >
+              <img
+                src="Assets/Ellipse 40.png"
+                class="sideImg py-3 position-absolute"
+                alt=""
+                srcset=""
+              />
+              <p class="p-3 p-lg-4 col-10 m-auto">
+                <span class="fw-semibold" style="color: #ff8610"
+                  >For Influencers: </span
+                >Micro to mid-tier creators looking to monetize meaningfully,
+                not just transact
+              </p>
+            </div>
+          </div>
+          <div class="col-8 d-flex">
+            <div class="col-2">
+              <img
+                src="Assets/Ellipse 44.jpg"
+                class="mt-4 me-auto d-flex"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="col-2 ms-auto mt-5">
+              <img
+                src="Assets/Ellipse 41.jpg"
+                class="mt-4 me-auto d-flex"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div
+              class="shadow p-3 mt-3 p-lg-3 col-10 m-auto rounded position-relative z-2"
+            >
+              <img
+                src="Assets/Ellipse 42.jpg"
+                class="position-absolute w-50 sideImg2"
+                alt=""
+              />
+              <p class="p-3 p-lg-4 col-10 m-auto">
+                <span class="fw-semibold" style="color: #ff8610"
+                  >For Brands: </span
+                >D2C and mid-sized marketing teams wanting better reach, deeper
+                engagement, and less operational chaos.
+              </p>
+            </div>
+            <img
+              src="Assets/Ellipse 43.jpg"
+              class="mt-4 ms-auto pe-5 d-flex"
+              alt=""
+              srcset=""
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -417,7 +503,7 @@
         Insights We Uncovered
       </p>
       <div class="row my-5">
-        <div class="col-10 col-lg-4 m-auto">
+        <div class="col-12 col-md-10 col-lg-4 m-auto my-3">
           <div class="empathyCard rounded p-4 pt-5 pb-5">
             <div class="text-start ps-4">
               <span class="bg-primary-subtle fw-semibold"
@@ -431,7 +517,7 @@
           </div>
         </div>
 
-        <div class="col-10 col-lg-4 m-auto">
+        <div class="col-12 col-md-10 col-lg-4 m-auto my-3">
           <div class="empathyCard rounded p-4 pt-5 pb-5">
             <div class="text-start ps-4">
               <span class="bg-primary-subtle fw-semibold"
@@ -445,7 +531,7 @@
           </div>
         </div>
 
-        <div class="col-10 col-lg-4 m-auto">
+        <div class="col-12 col-md-10 col-lg-4 m-auto my-3">
           <div class="empathyCard rounded p-4 pt-5 pb-5">
             <div class="text-start ps-4">
               <span class="bg-primary-subtle fw-semibold"
@@ -463,15 +549,20 @@
 
     <section id="CompetitorDeepDive" class="container my-5">
       <div class="row">
-        <div class="col-10 col-lg-6 my-3">
+        <div class="col-12 col-md-10 col-lg-6 my-3">
           <h2 class="text-start mt-5">Competitor Deep Dive</h2>
-          <p class="text-start col-7 mt-3">
+          <p class="text-start col-10 col-md-7 mt-3">
             We studied over 12 platforms—Aspire, Upfluence, Collabstr, even
             Instagram’s built-in tools. Common Gaps
           </p>
         </div>
-        <div class="col-10 col-lg-6 my-3">
-          <img src="Assets/Illustration.jpg" class="w-100" alt="" srcset="" />
+        <div class="col-12 col-lg-6 my-3 p-0 overflow-hidden">
+          <img
+            src="Assets/Illustration.jpg"
+            class="w-100 p-0"
+            alt=""
+            srcset=""
+          />
           <!-- <div class="browser-card">
             <div class="browser-header">
               <span class="dot red"></span>
@@ -491,7 +582,7 @@
         </div>
       </div>
       <div>
-        <ul class="text-start col-10 m-auto">
+        <ul class="text-start col-12 col-md-10 m-auto">
           <li class="my-3">
             The timing was also key—creator economy fatigue was real.
             Influencers were overwhelmed by cold pitches, and brands were
@@ -508,7 +599,7 @@
 
     <section id="Design" class="container my-5 h-100">
       <h2 class="fw-semibold my-5">Designing the Match + Collab Flow</h2>
-      <div class="col-10 m-auto">
+      <div class="col-12 col-md-10 m-auto">
         <span class="text-primary d-block text-start fw-semibold"
           >Social Profile & Rate Card Submission</span
         >
@@ -518,17 +609,45 @@
           their rate card by filling out the provided form, ensuring brands have
           transparent access to their pricing information.
         </p>
+        <div class="dSmall">
+          <div class="row fullCardBg rounded-4">
+            <div class="col-6 col-md-4 my-3">
+              <img src="Assets/Group 427321598.png" class="w-100" alt="" />
+            </div>
+            <div class="col-6 col-md-4 my-3">
+              <img src="Assets/Group 427321598.png" class="w-100" alt="" />
+            </div>
+            <div class="col-6 col-md-4 my-3">
+              <img src="Assets/Group 427321598.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
         <img
           src="Assets/Container 102.png"
-          class="w-100 mb-5"
+          class="w-100 mb-5 dLarge"
           alt=""
           srcset=""
         />
       </div>
-      <section class="container my-5">
-        <div class="col-10 m-auto">
-          <div class="DesignBg my-5">
-            <div class="col-6">
+
+      <div class="col-12 col-md-10 m-auto">
+        <div class="DesignBg my-5 dLarge">
+          <div class="col-6">
+            <span class="text-primary d-block text-start fw-semibold mt-4"
+              >Stronger Verification</span
+            >
+            <p class="text-start">
+              In the next step, for stronger verification, influencers are
+              required to provide their email, ID proof, mobile number, profile
+              picture, bank account details, along with their social media
+              profile (already connected in the previous step)."
+            </p>
+          </div>
+        </div>
+
+        <div class="dSmall">
+          <div class="row">
+            <div class="col-12">
               <span class="text-primary d-block text-start fw-semibold mt-4"
                 >Stronger Verification</span
               >
@@ -539,208 +658,296 @@
                 media profile (already connected in the previous step)."
               </p>
             </div>
+            <div class="col-12 fullCardBg rounded-4 w-100">
+              <img src="Assets/stro.png" class="col-6" alt="" srcset="" />
+            </div>
           </div>
+        </div>
+      </div>
 
-          <span class="text-primary d-block text-start fw-semibold mt-5"
-            >Campaign Browsing & Negotiation</span
-          >
-          <p class="text-start">
-            influencers can browse a wide range of ongoing campaigns. By
-            clicking on a campaign, they can view complete details and even
-            negotiate the proposed rates.
-          </p>
+      <div class="col-12 col-md-10 m-auto">
+        <span class="text-primary d-block text-start fw-semibold mt-5"
+          >Campaign Browsing & Negotiation</span
+        >
+        <p class="text-start">
+          influencers can browse a wide range of ongoing campaigns. By clicking
+          on a campaign, they can view complete details and even negotiate the
+          proposed rates.
+        </p>
+        <div class="dLarge">
           <img
             src="Assets/Container 104.png"
             class="w-100 mb-5"
             alt=""
             srcset=""
           />
-
-          <span class="text-primary d-block text-start fw-semibold mt-5"
-            >Content Drafts + Approvals</span
-          >
-          <p class="text-start">
-            Creators upload content drafts → Brands comment with markup → Easy
-            “approve” or “revise” flow with timestamps.
-          </p>
-          <img
-            src="Assets/Container 101.png"
-            class="w-100 mb-5"
-            alt=""
-            srcset=""
-          />
-
-          <h5 class="col-10 m-auto col-lg-6">
-            We introduced a smart recommendation engine that improves the
-            experience over time.
-          </h5>
-          <div class="col-10 m-auto">
-            <h5 class="text-start my-4">How It Works</h5>
-            <div class="row my-5">
-              <div class="col-6 mx-auto">
-                <div class="workColor rounded p-3 pb-5 text-start">
-                  <h6>FOR BRANDS</h6>
-                  <p class="p-3 mb-3 rounded bg-white shadow-sm">
-                    Learns preferred influencer type, past collab performance,
-                    audience overlap
-                  </p>
-                  <span class="p-1 rounded">Refactoring</span>
-                </div>
-              </div>
-              <div class="col-6 mx-auto">
-                <div class="mt-5 p-5"></div>
-                <div class="workColor rounded p-3 pb-5 text-start">
-                  <h6>For Creators</h6>
-                  <p class="p-3 mb-3 rounded bg-white shadow-sm">
-                    Learns content style, niche, engagement patterns to
-                    recommend better-fitting brands
-                  </p>
-                  <span class="p-1 rounded">Refactoring</span>
-                </div>
-              </div>
-            </div>
-            <p class="my-5">
-              We used NLP to parse briefs and suggest creators aligned in tone,
-              not just category. Example: “Looking for quirky, nostalgic
-              creators” Finds profiles tagged with “90s vibes”, “vintage edits”,
-              etc.
-            </p>
-          </div>
-          <div class="last m-auto">
-            <p class="fw-bold text-start">
-              New brands create campaigns by filling out a form. For returning
-              brands, the system saves data from previous campaigns and
-              generates templates that can be tweaked and reused — making
-              campaign creation faster and easier
-            </p>
-            <img src="Assets/blue1.png" class="w-100 my-5" alt="" srcset="" />
-
-            <span class="text-primary d-block text-start fw-semibold mt-5"
-              >Finding Influencers</span
-            >
-            <p class="text-start">
-              Brands can easily search and discover influencers using advanced
-              filter options.
-            </p>
-            <img
-              src="Assets/Container 107.png"
-              class="w-100 mb-5"
-              alt=""
-              srcset=""
-            />
-
-            <span class="text-primary d-block text-start fw-semibold mt-5"
-              >Trusted Decisions</span
-            >
-            <p class="text-start">
-              Before collaborating, brands can review an influencer’s profile,
-              rate card, past campaigns, and feedback from other brands —
-              helping them build trust and make informed decisions
-            </p>
-            <img
-              src="Assets/Container 109.png"
-              class="w-100 mb-5"
-              alt=""
-              srcset=""
-            />
-
-            <span class="text-primary d-block text-start fw-semibold mt-5"
-              >Content Drafts + Approvals</span
-            >
-            <p class="text-start">
-              The entire campaign is tracked from both ends — by influencers and
-              brands — ensuring a smooth and hassle-free process.
-            </p>
-            <img
-              src="Assets/Container 106.png"
-              class="w-100 mb-5"
-              alt=""
-              srcset=""
-            />
-
-            <span class="text-primary d-block text-start fw-semibold mt-5"
-              >Finalize Campaign</span
-            >
-            <p class="text-start">
-              Before making a payment, brands can review all posted content,
-              stories, and campaign performance in one place. Once satisfied,
-              they complete the payment to the influencer to finalize the deal.
-            </p>
-            <img
-              src="Assets/Container 111.png"
-              class="w-100 mb-5"
-              alt=""
-              srcset=""
-            />
-          </div>
         </div>
-        <div id="DesignLast">
-          <h2 class="my-5">Monetization for Creators</h2>
-          <div class="row my-5">
-            <div class="col-12 col-lg-6 text-start my-auto">
-              <h3 class="mb-4 text-dark">
-                Most platforms stop at <br />campaigns. We didn’t.
-              </h3>
-              <ul class="list-unstyled">
-                <li>
-                  We added tools for:<br />
-                  Thrift Store Pages: Creators can sell preloved items right
-                  in-app (fashion, props, gear)
-                </li>
-                <li class="my-3">
-                  Workshop Hosting: Run paid virtual sessions (e.g., “How I
-                  shoot reels with no tripod”)
-                </li>
-                <li>
-                  Affiliate Hub: Share products with embedded affiliate tracking
-                </li>
-                <li class="my-3">
-                  This made the app a daily tool, not just a campaign inbox.
-                </li>
-              </ul>
-            </div>
-            <div class="col-2 col-lg-6">
+        <div class="dSmall w-100">
+          <div class="row fullCardBg rounded-4">
+            <div class="col-6">
               <img
-                src="Assets/Container 112.png"
+                src="Assets/Group 1000004492.png"
+                class="w-100"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="Assets/Group 1000004493.png"
                 class="w-100"
                 alt=""
                 srcset=""
               />
             </div>
           </div>
-          <div class="my-5">
-            <p class="m-0">Email & Engagement Strategy</p>
-            <p class="m-0">
-              Our aim wasn’t just to onboard users—but to keep them.
-            </p>
-            <p class="m-0">
-              Campaign Tracker Emails: Summary of all active collabs + pending
-              actions
-            </p>
-            <p class="m-0">
-              New Match Alerts: Weekly digest of potential collabs
-            </p>
-            <p class="m-0">
-              Workshop Invites & Community Spotlights: Celebrate top creators,
-              showcase learning sessions
-            </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-10 m-auto">
+        <span class="text-primary d-block text-start fw-semibold mt-5"
+          >Content Drafts + Approvals</span
+        >
+        <p class="text-start">
+          Creators upload content drafts → Brands comment with markup → Easy
+          “approve” or “revise” flow with timestamps.
+        </p>
+        <img
+          src="Assets/Container 101.png"
+          class="w-100 mb-5 dLarge"
+          alt=""
+          srcset=""
+        />
+        <div class="dSmall">
+          <div class="row fullCardBg rounded-4">
+            <div class="col-6">
+              <img
+                src="Assets/Group 427321585.png"
+                class="w-100"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="Assets/Group 427321586.png"
+                class="w-100"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
-          <p class="my-5">
-            We built
-            <span class="bg-warning">a flexible, modern design system</span>.
-            Playful gradients for creators, clean edges for brands—mirroring the
-            two personas in harmony.
+        </div>
+      </div>
+
+      <div class="col-12 col-md-10 m-auto forBrand">
+        <h5 class="col-12 col-md-7 mx-auto mt-5">
+          We introduced a smart recommendation engine that improves the
+          experience over time.
+        </h5>
+        <h5 class="text-start mt-4">How It Works</h5>
+        <div class="row my-3 mt-md-5">
+          <div class="col-11 col-md-6 ms-sm-auto">
+            <div class="workColor rounded p-3 pb-5 text-start">
+              <h6>FOR BRANDS</h6>
+              <p class="p-3 mb-3 rounded bg-white shadow-sm">
+                Learns preferred influencer type, past collab performance,
+                audience overlap
+              </p>
+              <span class="p-1 rounded">Refactoring</span>
+            </div>
+          </div>
+          <div class="col-11 col-md-6 ms-auto">
+            <div class="mt-2 mt-md-5 p-2 p-md-5"></div>
+            <div class="workColor rounded p-3 pb-5 text-start">
+              <h6>For Creators</h6>
+              <p class="p-3 mb-3 rounded bg-white shadow-sm">
+                Learns content style, niche, engagement patterns to recommend
+                better-fitting brands
+              </p>
+              <span class="p-1 rounded">Refactoring</span>
+            </div>
+          </div>
+        </div>
+        <p class="my-5">
+          We used NLP to parse briefs and suggest creators aligned in tone, not
+          just category. Example: “Looking for quirky, nostalgic creators” Finds
+          profiles tagged with “90s vibes”, “vintage edits”, etc.
+        </p>
+      </div>
+
+      <div class="col-12 col-md-10 m-auto">
+        <p class="fw-bold text-start">
+          New brands create campaigns by filling out a form. For returning
+          brands, the system saves data from previous campaigns and generates
+          templates that can be tweaked and reused — making campaign creation
+          faster and easier
+        </p>
+        <img src="Assets/blue1.png" class="w-100 my-5 dLarge" alt="" srcset="" />
+        <div class="dSmall">
+          <div class=" row  blueColor p-3 rounded-4">
+            <div class="col-12 my-3">
+              <img src="Assets/iPad & Apple Pencil.png" class="w-100" alt="" srcset="">
+            </div>
+            <div class="col-12 my-3">
+              <img src="Assets/iPad & Apple Pencil-1.png" class="w-100" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-10 m-auto">
+        <span class="text-primary d-block text-start fw-semibold mt-5"
+          >Finding Influencers</span
+        >
+        <p class="text-start">
+          Brands can easily search and discover influencers using advanced
+          filter options.
+        </p>
+        <img
+          src="Assets/Container 107.png"
+          class="w-100 mb-5 dLarge"
+          alt=""
+          srcset=""
+        />
+        <div class="dSmall blueColor rounded-4 mt-5 row">
+          <img src="Assets/iPad & Apple Pencil-3.png" class="w-75" alt="" srcset="" style="transform: translateY(-30px);">
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-10 m-auto">
+        <span class="text-primary d-block text-start fw-semibold mt-5"
+          >Trusted Decisions</span
+        >
+        <p class="text-start">
+          Before collaborating, brands can review an influencer’s profile, rate
+          card, past campaigns, and feedback from other brands — helping them
+          build trust and make informed decisions
+        </p>
+        <img
+          src="Assets/Container 109.png"
+          class="w-100 mb-5 dLarge"
+          alt=""
+          srcset=""
+        />
+        <div class="dSmall row">
+            <div class="blueColor rounded-4 p-2">
+            <img src="Assets/iPad & Apple Pencil-4.png" class="w-75" alt="" srcset="" >
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-10 m-auto">
+        <span class="text-primary d-block text-start fw-semibold mt-5"
+          >Content Drafts + Approvals</span
+        >
+        <p class="text-start">
+          The entire campaign is tracked from both ends — by influencers and
+          brands — ensuring a smooth and hassle-free process.
+        </p>
+        <img
+          src="Assets/Container 106.png"
+          class="w-100 mb-5 dLarge"
+          alt=""
+          srcset=""
+        />
+        <div class="dSmall blueColor rounded-4 mt-5 row">
+          <img src="Assets/Group 427321601.png" class="w-50 d-flex" alt="" srcset="" style="transform: translateY(-45px);">
+          <img src="Assets/iPad & Apple Pencil-5.png" class="w-100" alt="" srcset="" style="transform: translateY(-30px);">
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-10 m-auto">
+        <span class="text-primary d-block text-start fw-semibold mt-5"
+          >Finalize Campaign</span
+        >
+        <p class="text-start">
+          Before making a payment, brands can review all posted content,
+          stories, and campaign performance in one place. Once satisfied, they
+          complete the payment to the influencer to finalize the deal.
+        </p>
+        <img
+          src="Assets/Container 111.png"
+          class="w-100 mb-5 dLarge"
+          alt=""
+          srcset=""
+        />
+        <div class="dSmall blueColor rounded-4 mt-5 row">
+          <img src="Assets/iPad & Apple Pencil-6.png" class="w-75" alt="" srcset="" style="transform: translateY(-30px);">
+        </div>
+      </div>
+
+      <div id="DesignLast">
+        <h2 class="my-5">Monetization for Creators</h2>
+        <div class="row my-5">
+          <div class="col-12 col-lg-6 text-start my-auto">
+            <h3 class="mb-4 text-dark">
+              Most platforms stop at <br />campaigns. We didn’t.
+            </h3>
+            <ul class="list-unstyled">
+              <li>
+                We added tools for:<br />
+                Thrift Store Pages: Creators can sell preloved items right
+                in-app (fashion, props, gear)
+              </li>
+              <li class="my-3">
+                Workshop Hosting: Run paid virtual sessions (e.g., “How I shoot
+                reels with no tripod”)
+              </li>
+              <li>
+                Affiliate Hub: Share products with embedded affiliate tracking
+              </li>
+              <li class="my-3">
+                This made the app a daily tool, not just a campaign inbox.
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              src="Assets/Container 112.png"
+              class="w-100"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="m-0">Email & Engagement Strategy</p>
+          <p class="m-0">
+            Our aim wasn’t just to onboard users—but to keep them.
+          </p>
+          <p class="m-0">
+            Campaign Tracker Emails: Summary of all active collabs + pending
+            actions
+          </p>
+          <p class="m-0">
+            New Match Alerts: Weekly digest of potential collabs
+          </p>
+          <p class="m-0">
+            Workshop Invites & Community Spotlights: Celebrate top creators,
+            showcase learning sessions
           </p>
         </div>
-      </section>
+        <p class="my-5">
+          We built
+          <span class="bg-warning">a flexible, modern design system</span>.
+          Playful gradients for creators, clean edges for brands—mirroring the
+          two personas in harmony.
+        </p>
+      </div>
     </section>
 
     <section class="container-fluid p-0">
-      <img src="Assets/remaining.png" class="w-100" alt="" srcset="" />
+      <img src="Assets/remaining.png" class="w-100 dLarge" alt="" srcset="" />
+      <img src="Assets/secImg.png" class="w-100 dSmall" alt="" srcset="" />
     </section>
 
     <section class="container remin">
-      <div class="col-10 m-auto text-start">
+      <div class="col-12 col-md-10 m-auto text-start">
         <div class="col-lg-12 m-auto my-5">
           <div class="row projects bg-white rounded-4 overflow-hidden">
             <div class="col-6 project1">
@@ -806,7 +1013,7 @@
       class="container-fluid footer p-5"
       style="background-color: #110c07"
     >
-      <h2 class="text-center pb-5">Feel free to connect</h2>
+      <h2 class="text-center pb-2 pb-md-5">Feel free to connect</h2>
       <div class="d-flex align-items-end justify-content-center pb-lg-5">
         <a
           class="text-decoration-none"
@@ -833,7 +1040,7 @@
           <img src="./Assets/behance.png" alt="" srcset="" />
         </a>
       </div>
-      <div class="col-5 m-auto mt-lg-5">
+      <div class="col-12 col-md-5 m-auto mt-lg-5">
         <ul
           class="list-unstyled d-flex align-items-center justify-content-between"
         >
@@ -847,9 +1054,7 @@
             <a class="text-decoration-none" href="about.html">ABOUT</a>
           </li>
           <li>
-            <a class="text-decoration-none" href="index.html#contact"
-              >CONTACT</a
-            >
+            <a class="text-decoration-none" href="index.html#contact">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -861,6 +1066,5 @@
     <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
     <script src="gsap.js"></script>
     <script src="index.js"></script>
-   
   </body>
 </html>

@@ -164,7 +164,7 @@ tl3.fromTo("#Overview h2", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease
 tl3.fromTo("#Overview p", {x:30, opacity:0}, {x:0, opacity:1, duration:.4, ease:'back.in',scrollTrigger:{trigger:"#Overview p",start:"top 90%",end:"top 80%",scrub:true}});
 tl3.fromTo("#Overview h6", {x:30, opacity:0}, {x:0, opacity:1, duration:.4, ease:'back.in',stagger:.1,scrollTrigger:{trigger:"#Overview h6",start:"top 90%",end:"top 80%",scrub:true}});
 tl3.fromTo("#TheProposal h1", {x:30, opacity:0}, {x:0, opacity:1, duration:.4, ease:'back.in',scrollTrigger:{trigger:"#TheProposal",start:"top 60%",end:"top 40%",scrub:true}});
-gsap.utils.toArray("#proposed .col-10").forEach((item, i) => {
+gsap.utils.toArray("#proposed .col-12").forEach((item, i) => {
   tl3.fromTo(item,
     {y: i*(i+30), opacity:0}, {
       y:0,
@@ -268,6 +268,10 @@ gsap.utils.toArray("#Design .col-10 >*,#Design .last >*,#Design #DesignLast >*")
 tl3.fromTo(".DesignBg,.DesignBg >*", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:".DesignBg",start:"top 80%",end:"top 40%",scrub:true}});
 // tl3.fromTo(".last >*", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:".last",start:"top 80%",end:"top 40%",scrub:true}});
 
+var tl4=gsap.timeline()
+  tl4.fromTo("#projTop p", {y:40, opacity:0}, {y:0, opacity:1, duration:.2,delay:.8, ease:'back.in'});
+  tl4.fromTo("#projTop img", {y:40, opacity:0}, {y:0, opacity:1, stagger:.2, ease:'back.in'});
+  
 
 
 
