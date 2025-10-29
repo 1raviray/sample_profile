@@ -38,6 +38,9 @@ function runanimation(){
     tl.fromTo("#hero2", { y: 20, opacity: 0 }, {
       y: 0, opacity: 1, duration: 0.4, stagger: 0.1, ease: "back.in"
     },"x");
+    tl.fromTo(".marq", { y: 20, opacity: 0 }, {
+      y: 0, opacity: 1, duration: 0.4, stagger: 0.1, ease: "back.in"
+    },"x");
     tl.fromTo(".hero2 a", { y: 20, opacity: 0 }, {
       y: 0, opacity: 1, duration: 0.4, stagger: 0.1, ease: "back.in"
     });
@@ -98,12 +101,12 @@ function animateWithGSAP() {
   requestAnimationFrame(()=>{
   // run animations on page load (no ScrollTrigger)
   var tl1=gsap.timeline()
-  tl1.fromTo(introP, {y: 40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in',delay:.8});
+  tl1.fromTo("#intro p", {y: 40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in',delay:.8});
+  tl1.fromTo("#intro img", {scale:0, opacity:0}, {scale:1, opacity:1,duration:.3,stagger:.3, ease:'none'});
   tl1.fromTo(workH5, {y:40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in'});
   tl1.fromTo(".workExperience h6", {y:40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in'});
   tl1.fromTo(".lineSeperator1", {y:40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in'});
   tl1.fromTo("#item1 >*", {y:40, opacity:0}, {y:0, opacity:1, duration:.1,stagger:.1, ease:'back.in'});
-  tl1.fromTo("#intro p img", {scale:0, opacity:0}, {scale:1, opacity:1, duration:.1,stagger:.1, ease:'back.in'});
 });
 
 // Each work experience item

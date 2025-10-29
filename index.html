@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Actor&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
@@ -46,7 +47,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="navbar-container container">
-          <a class="navbar-brand" href="/">KARUNA</a>
+          <a class="navbar-brand" href="index.html">KARUNA</a>
           <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -61,7 +62,7 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0 pe-lg-5 ">
               <li class="nav-item d-flex justify-content-center py-3">
-                <a class="nav-link" href="/" aria-current="page">Home</a>
+                <a class="nav-link" href="index.html" aria-current="page">Home</a>
               </li>
               <li class="nav-item d-flex justify-content-center py-3">
                 <a class="nav-link" href="project.html">PROJECT</a>
@@ -128,7 +129,7 @@
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-7 col-lg-7 my-md-auto">
+        <div class="col-12 col-md-7 col-lg-7 my-md-auto position-relative">
           <img
             id="hero2"
             class="ms-md-auto mx-auto mx-md-0  d-flex mt-lg-5 pt-lg-2"
@@ -136,6 +137,8 @@
             alt=""
             srcset=""
           />
+          <marquee behavior="" direction="" class="marq">Making features meaningful</marquee>
+
           <div
             class="text-center d-flex align-items-end justify-content-center hero2 mb-lg-5"
           >
@@ -177,7 +180,7 @@
         <div class="row projects bg-white rounded-4 overflow-hidden">
           <div class="col-6 project1">
             <div
-              class="col-8 col-md-7 d-flex flex-column justify-content-around m-auto h-100"
+              class="col-11 col-md-7 d-flex flex-column justify-content-around m-auto h-100"
             >
               <div class="">
                 <h3>01 / INFLUENCER MARKETING APP</h3>
@@ -200,7 +203,7 @@
         <div class="row projects bg-white rounded-4 overflow-hidden">
           <div class="col-6 project1">
             <div
-              class="col-8 col-md-7 d-flex flex-column justify-content-around m-auto h-100"
+              class="col-11 col-md-7 d-flex flex-column justify-content-around m-auto h-100"
             >
               <div class="">
                 <h3>Website</h3>
@@ -225,7 +228,7 @@
           </div>
           <div class="col-6 project1">
             <div
-              class="col-8 col-md-7 d-flex flex-column justify-content-around m-auto h-100"
+              class="col-11 col-md-7 d-flex flex-column justify-content-around m-auto h-100"
             >
               <div class="">
                 <h3>Website</h3>
@@ -355,8 +358,7 @@
       <h1 class="">Have an idea? Let’s bring it to life <br />together.</h1>
       <div class="col-12 col-md-10 col-md-8 col-lg-5 m-auto mt-4 mt-md-5">
         <form id="form"
-          action="https://formspree.io/f/manbegpj"
-          method="POST"
+        onsubmit="sendMail(event)"
           class="form-container m-auto pt-2 pt-md-5"
         >
           <div class="input-group">
@@ -477,7 +479,7 @@
           class="list-unstyled d-flex align-items-center justify-content-between"
         >
           <li>
-            <a class="text-decoration-none" href="/">HOME</a>
+            <a class="text-decoration-none" href="index.html">HOME</a>
           </li>
           <li>
             <a class="text-decoration-none" href="project.html">PROJECTS</a>
