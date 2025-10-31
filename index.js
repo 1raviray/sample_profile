@@ -1,35 +1,3 @@
-function sendMail(event) {
-  event.preventDefault();
-  const name = (document.getElementById('name').value);
-  const email = (document.getElementById('email').value);
-  const message = (document.getElementById('message').value);
-
-  const subject = encodeURIComponent("New message from contact form");
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-
-  window.location.href = `mailto:karunanjali.gurram@gmail.com?subject=${subject}&body=${body}`;
-}
-
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 0,
-  nav: false,
-  autoplay:true,
-  autoplayTimeout:2000,
-  dots:false,
-  responsive: {
-    0: {
-      items: 3.5,
-    },
-    1000: {
-      items: 6.5,
-    },
-    1000: {
-      items: 8.5,
-    },
-  },
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".influencer-nav .nav-link");
   const sections = Array.from(navLinks).map(link => {
@@ -79,4 +47,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", updateActiveLink);
   updateActiveLink(); // run on load
+});
+
+
+
+function sendMail(event) {
+  event.preventDefault();
+  const name = (document.getElementById('name').value);
+  const email = (document.getElementById('email').value);
+  const message = (document.getElementById('message').value);
+
+  const subject = encodeURIComponent("New message from contact form");
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+
+  // window.location.href = `mailto:karunanjali.gurram@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:raviray66667@gmail.com?subject=${subject}&body=${body}`;
+}
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 0,
+  nav: false,
+  autoplay:true,
+  autoplayTimeout:2000,
+  dots:false,
+  responsive: {
+    0: {
+      items: 3.5,
+    },
+    1000: {
+      items: 6.5,
+    },
+    1000: {
+      items: 8.5,
+    },
+  },
 });

@@ -102,7 +102,7 @@ function animateWithGSAP() {
   // run animations on page load (no ScrollTrigger)
   var tl1=gsap.timeline()
   tl1.fromTo("#intro p", {y: 40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in',delay:.8});
-  tl1.fromTo("#intro img", {scale:0, opacity:0}, {scale:1, opacity:1,duration:.3,stagger:.3, ease:'none'});
+  tl1.fromTo("#intro img", {scale:0, opacity:0}, {scale:1, opacity:1,duration:.3,stagger:.2, ease:'none'});
   tl1.fromTo(workH5, {y:40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in'});
   tl1.fromTo(".workExperience h6", {y:40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in'});
   tl1.fromTo(".lineSeperator1", {y:40, opacity:0}, {y:0, opacity:1, duration:.2, ease:'back.in'});
@@ -184,7 +184,7 @@ gsap.utils.toArray("#proposed .col-12").forEach((item, i) => {
   });
 });
 tl3.fromTo("#UXChallenges h1", {x:-30, opacity:0}, {x:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:"#UXChallenges",start:"top 80%",end:"top 70%",scrub:true}});
-gsap.utils.toArray("#UXChallenges .col-10").forEach((item, i) => {
+gsap.utils.toArray("#UXChallenges .col-12").forEach((item, i) => {
   tl3.fromTo(item,
     {x: i%2==0?40:-40, opacity:0}, {
       x:0,
@@ -235,7 +235,7 @@ gsap.utils.toArray("#EmpathyDiscovery .empathyCard >*").forEach((item, i) => {
       },
     });
   });  
-gsap.utils.toArray("#CompetitorDeepDive .col-10 >*").forEach((item, i) => {
+gsap.utils.toArray("#CompetitorDeepDive .col-12").forEach((item, i) => {
   tl3.fromTo(item,
     {opacity:0,y:30}, {
       y:0,
@@ -252,7 +252,7 @@ gsap.utils.toArray("#CompetitorDeepDive .col-10 >*").forEach((item, i) => {
     });
   });  
   tl3.fromTo("#Design h2", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:"#Design",start:"top 70%",end:"top 60%",scrub:true}});
-gsap.utils.toArray("#Design .col-10 >*,#Design .last >*,#Design #DesignLast >*").forEach((item, i) => {
+gsap.utils.toArray("#Design .col-12 >*,#Design .last >*,#Design #DesignLast >*").forEach((item, i) => {
   tl3.fromTo(item,
     {opacity:0,y:30}, {
       y:0,
@@ -263,12 +263,12 @@ gsap.utils.toArray("#Design .col-10 >*,#Design .last >*,#Design #DesignLast >*")
       scrollTrigger: {
         trigger: item,
         start: "top 80%",
-        end: "top 30%",
+        end: "top 60%",
         scrub: true
       },
     });
   });  
-tl3.fromTo(".DesignBg,.DesignBg >*", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:".DesignBg",start:"top 80%",end:"top 40%",scrub:true}});
+// tl3.fromTo(".DesignBg,.DesignBg >*", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:".DesignBg",start:"top 80%",end:"top 40%",scrub:true}});
 // tl3.fromTo(".last >*", {y:30, opacity:0}, {y:0, opacity:1, duration:.4, ease:'linear',scrollTrigger:{trigger:".last",start:"top 80%",end:"top 40%",scrub:true}});
 
 var tl4=gsap.timeline()
@@ -307,25 +307,3 @@ window.addEventListener("DOMContentLoaded",runanimation)
 // }
   
   
-
-
-
-const form = document.getElementById("form");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    fetch(form.action, {
-      method: "POST",
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        alert("Form submitted successfully!");
-        form.reset();
-      } else {
-        alert("Something went wrong!");
-      }
-    });
-  });

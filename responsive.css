@@ -218,21 +218,24 @@
   .projectImg h1 {
     font-size: 25.7px;
   }
+  .projects2{
+    border-radius: 10px !important;
+  }
   .project1 h3 {
-    font-size: 6.6px;
-    line-height: 10px;
+    font-size: 16px;
+    line-height:normal
   }
   .project1 h5 {
-    font-size: 6.6px;
-    line-height: 10px;
+    font-size: 18px;
+    line-height:normal
   }
   .project1 p {
-    font-size: 5.13px;
-    line-height: 10px;
+    font-size: 8px;
+    line-height:normal
   }
   .project1 a {
-    font-size: 6.6px;
-    line-height: 10px;
+    font-size: 14px;
+    line-height:normal
   }
   .moreProjects h2{
     font-size: 17.5px;
@@ -241,10 +244,13 @@
     font-size: 40px;
   }
   .tools h5 {
-    font-size: 16.5px;
+    font-size: 14px;
   }
   .tools p {
-    font-size: 11.3px;
+    font-size: 9px;
+  }
+  .tools img{
+    width: 50px;
   }
   .contact h1 {
     font-size: 18px;
@@ -352,6 +358,15 @@
 #Overview img {
   width: 100%;
 }
+#Overview p{
+  font-size: 16px;
+}
+.head6{
+  font-size: 18px;
+}
+.head7{
+  font-size: 30.2px;
+}
 .sectionHeight{
   height: 100%;
 }
@@ -398,6 +413,12 @@
 }
 #CompetitorDeepDive img{
   scale: 1.1;
+}
+.browser-content p{
+  font-size: 12px;
+}
+.browser-content ul li{
+  font-size: 18px !important;
 }
 #Design span{
   font-size: 13.2px;

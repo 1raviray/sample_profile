@@ -69,10 +69,10 @@
                 >
               </li>
               <li class="nav-item d-flex justify-content-center py-3">
-                <a class="nav-link" href="project.html">PROJECT</a>
+                <a class="nav-link" href="project.html">PROJECTS</a>
               </li>
               <li class="nav-item d-flex justify-content-center py-3">
-                <a class="nav-link" href="about.html">ABOUT</a>
+                <a class="nav-link active" href="about.html">ABOUT</a>
               </li>
               <li class="nav-item d-flex justify-content-center py-3">
                 <a
@@ -218,7 +218,7 @@
   </section>
 
     <!-- WORK EXPERIENCE -->
-    <section class="container workExperience my-5">
+    <section class="container workExperience my-5 overflow-hidden">
       <h5 class="fw-bold my-4">Work experience</h5>
       <div class="row">
         <div class="col-2 p-0">
@@ -458,8 +458,7 @@
       <div class="col-12 col-md-10 col-md-8 col-lg-5 m-auto mt-4 mt-md-5">
         <form
           id="form"
-          action="https://formspree.io/f/manbegpj"
-          method="POST"
+          onsubmit="sendMail(event)"
           class="form-container m-auto pt-2 pt-md-5"
         >
           <div class="input-group">
@@ -543,7 +542,7 @@
             <a class="text-decoration-none" href="project.html">PROJECTS</a>
           </li>
           <li>
-            <a class="text-decoration-none" href="about.html">ABOUT</a>
+            <a class="text-decoration-none active" href="about.html">ABOUT</a>
           </li>
           <li>
             <a class="text-decoration-none" href="index.html#contact"

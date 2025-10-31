@@ -32,6 +32,15 @@ html.lenis body {
   top:5%;
   z-index: 99;
 }
+header .navbar .nav-item .active{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.footer .active{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ffdcba;
+}
 .navbar-nav-scroll {
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
@@ -230,15 +239,15 @@ html.lenis body {
 .project1 h3 {
   color: #181717;
   font-size: 18px;
-  font-family: Inter;
+  font-family: Afacad;
   font-weight: 500;
   line-height: 21.87px;
   word-wrap: break-word;
 }
 .project1 h5 {
   color: #181717;
-  font-size: 18px;
-  font-family: Inter;
+  font-size: 20px;
+  font-family: Afacad;
   font-weight: 400;
   line-height: 21.87px;
   word-wrap: break-word;
@@ -254,7 +263,7 @@ html.lenis body {
 .project1 a {
   color: #181717;
   font-size: 18px;
-  font-family: Inter;
+  font-family: afacad;
   font-weight: 500;
   text-decoration: underline;
   line-height: 21.87px;
@@ -280,7 +289,7 @@ html.lenis body {
 }
 .tools h5 {
   color: white;
-  font-size: 24.64px;
+  font-size: 19.5px;
   font-family: Aboreto;
   font-weight: 400;
   text-transform: lowercase;
@@ -289,12 +298,15 @@ html.lenis body {
 }
 .tools p {
   color: #b3b3b3;
-  font-size: 16.98px;
+  font-size: 13.4px;
   font-family: Poppins;
   font-weight: 400;
   text-transform: lowercase;
   letter-spacing: 0.51px;
   word-wrap: break-word;
+}
+.tools img{
+  width: 60px;
 }
 .contact h1 {
   color: #212121;
@@ -599,11 +611,12 @@ html.lenis body {
   font-family: afacad;
   font-size: 26.73px;
 }
-#projTop img{
-  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.projImg{
+  transition: all .3s;
+  transform: scale(1);
 }
-#projTop img:hover{
-  scale: 1.05;
+.projImg:hover{
+  transform: scale(1.5);
 }
 
 /* -------------influencer page-------------- */
@@ -636,6 +649,15 @@ html.lenis body {
   color: #202020;
   font-size: 34px;
   font-family: "Inter", sans-serif;
+}
+#Overview p{
+  font-size: 28px;
+}
+.head6{
+  font-size: 22px;
+}
+.head7{
+  font-size: 34.2px;
 }
 .fullCardBg {
   background-color: #ffdcba;
@@ -687,7 +709,6 @@ html.lenis body {
   position: relative;
   background-color: #e2e8f0;;
   border-radius: 20px;
-  clip-path: path('M 0% 8% A 5.7% 8% 0 0 1 5.7% 0% L 38.6% 0% Q 50% 20% 61.4% 0% L 94.3% 0% A 5.7% 8% 0 0 1 100% 8% L 100% 91.8% A 5.7% 8% 0 0 1 94.3% 100% L 5.7% 100% A 5.7% 8% 0 0 1 0% 91.8% Z');
 }
 .card-stack:hover {
   transform: translateY(-5px);
@@ -700,13 +721,27 @@ html.lenis body {
   transform: translateX(-50%);
   width: 125px;
   height: 100px;
-  background: #fff;
+  background: #ffffff;
   border-radius:0 0 100px 100px;
   z-index: 0;
 }
 .card-stack img{
   position: absolute;
   top: -24%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.card-stack .girlPhn{
+  position: absolute;
+  top: -26.5%;
+  left: 51%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.card-stack .hand{
+  position: absolute;
+  top: -30.5%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -744,12 +779,80 @@ html.lenis body {
   font-size: 42px;
 }
 #CompetitorDeepDive ul li{
-  font-size: 28px;
+  font-size: 24px;
+  font-family: afacad;
+}
+.browser-card{
+  background-color: #fff !important;
+  position: relative;
+  /* z-index: 1; */
+  border: 1px solid #e0e0e0;
+}
+@property --deg{
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+.browser-card::before,.browser-card::after{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+  content: "";
+  height:80%;
+  width: 90%;
+  border-radius: inherit;
+  /* background: linear-gradient(from var(--deg) at right,#44FF9A 0%,#44B0FF 23%,#8B44FF 49%,#FF6644 74%,#EBFF70 100%); */
+  background: linear-gradient(var(--deg),#44FF9A 0%,#44B0FF 23%,#8B44FF 49%,#FF6644 74%,#EBFF70 100%);
+  animation: rotateinfinate 2s linear infinite;
+}
+@keyframes rotateinfinate{
+  to{
+    --deg:360deg
+  }
+}
+.browser-card::after{
+  z-index: -1;
+  filter: blur(25px);
+}
+.browser-header {
+  height: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.browser-content p{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 11px;
+}
+.browser-content ul li{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px !important;
+  padding: 10px 0;
+  font-weight: bold;
+}
+#Dedign{
+  font-family: afacad;
 }
 #Design span{
   font-size: 15.45px;
 }
-#Design p{
+#Design p,#Design span{
   font-size: 20px;
 }
 #Design h5{
