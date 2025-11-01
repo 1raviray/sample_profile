@@ -56,26 +56,118 @@
   .contact h1 {
     font-size: 38px;
   }
-  .marq{
+  .marq {
     top: 34.5%;
     right: 27.3%;
     width: 28.7%;
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1199px) {
+  .hero1 {
+    margin-top: 10em;
+  }
+  .hero1 h2 {
+    font-size: 33px;
+  }
+  .hero1 h5 {
+    font-size: 21px;
+  }
+  .hero1 p {
+    font-size: 18px;
+  }
+  .amalsoCardPosition {
+    scale: 0.8;
+    transform: translate(-15%, -70%);
+  }
+  .amalsoCardPosition2 {
+    scale: 0.8;
+    transform: translate(15%, -70%);
+  }
+  .amalsoCardPosition1 {
+    scale: 0.8;
+    transform: translate(-57%, -30%);
+  }
+  .imgDeco {
+    width: 48%;
+    top: -50%;
+    right: -14%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    width: 45%;
+    left: -13%;
+  }
+  .hero1 {
+    margin-top: 10em;
+  }
+  .hero1 h2 {
+    font-size: 32px;
+  }
+  .hero1 h5 {
+    font-size: 20px;
+  }
+  .hero1 p {
+    font-size: 18px;
+  }
+
+  .hero-button {
+    font-size: 11.1px;
+    height: 35px;
+    line-height: 0;
+  }
+  .hero-button-img1 {
+    width: 28px;
+  }
+  .hero-button-img2 {
+    width: 36px;
+  }
+  .projectImg {
+    background-position: top center;
+    height: 50vh;
+  }
+  .projectImg h1 {
+    font-size: 40px;
+  }
+  .projects2 {
+    border-radius: 10px !important;
+  }
+  .project1 h3 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .project1 h5 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .project1 p {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .project1 a {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .moreProjects h2 {
+    font-size: 28px;
+  }
   .amAlso2 p {
     font-size: 21.46px;
   }
-  .amalsoCardPositionDeco,.amalsoCardPositionDeco1{
+  .amalsoCardPositionDeco,
+  .amalsoCardPositionDeco1 {
     display: none;
   }
-  .amalsoCardPosition,.amalsoCardPosition1,.amalsoCardPosition2{
-    scale: .7;
+  .amalsoCardPosition,
+  .amalsoCardPosition1,
+  .amalsoCardPosition2 {
+    scale: 0.7;
     left: 45%;
     transform: translatex(-45%);
   }
-  .amalso2-container{
+  .amalso2-container {
     height: 120vh;
   }
   .amalsoCardPosition {
@@ -84,23 +176,356 @@
   .amalsoCardPosition1 {
     top: 48%;
     left: 45%;
-    transform: translate(-48%,-45%);
+    transform: translate(-48%, -45%);
   }
   .amalsoCardPosition2 {
     top: 68%;
   }
-}
+  #Overview h3 {
+    font-size: 14px;
+    line-height: normal;
+  }
+  #Overview h2 {
+    font-size: 28px;
+  }
+  #Overview p {
+    font-size: 22px;
+  }
+  #Overview span {
+    font-size: 28px;
+  }
+  #TheProposal h4 {
+    font-size: 18px;
+  }
+  .sectionHeight {
+    height: 100%;
+  }
+  .empathyCard{
+    height: 100%;
+  }
+  .empathyCard span{
+    font-size: 15px;
+  }
+  .empathyCard p {
+    font-size: 18px;
+  }
+  #CompetitorDeepDive h2{
+    font-size: 32px;
+  }
+  #CompetitorDeepDive ul li{
+    font-size: 18px;
+  }
+  .browser-content p{
+    font-size: 14px;
+  }
+  .browser-content ul li{
+    font-size: 16px !important;
+  }
+  
+  #Design span {
+    font-size: 15.2px;
+  }
+  #Design h2 {
+    font-size: 30.3px;
+  }
+  #Design p {
+    font-size: 16px;
+  }
+  #Design h5 {
+    color: #424955;
+    font-size: 25px;
+  }
+  .DesignBg {
+    height: 65vh;
+  }
+  .forBrand h5 {
+    font-size: 16px !important;
+  }
+  .workColor h6 {
+    font-size: 14px;
+  }
+  .workColor p {
+    font-size: 14px !important;
+  }
+  .workColor span {
+    font-size: 12.61px;
+  }
 
-@media (max-width: 992px){
-  .marq{
-    font-size: 12px;
-    top: 29%;
-    right: 27%;
-    width: 28.7%;
+  #DesignLast h3 {
+    font-size: 20.5px;
+  }
+  #DesignLast li {
+    font-size: 16.6px;
+  }
+  .dMedium{
+    display: block;
+  }
+  .dL2{
+    display: none;
+  }
+  
+  .workExperience h6 {
+    font-size: 10.6px;
+  }
+  .workExperience h1 {
+    font-size: 23.5px;
+  }
+  .workExperience h5 {
+    font-size: 18px;
+  }
+  .workExperience h2,
+  h3 {
+    font-size: 16px;
+  }
+  .workExperience h3 {
+    color: #ff5900;
+  }
+  .workExperience p,
+  li {
+    font-size: 16px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .navbar {
+    height: 100% !important;
+  }
+  .headerPhone,
+  .headerPhone1 {
+    display: none;
+  }
+  .headerPhoneres {
+    padding-left: 1em;
+    width: 5em;
+  }
+  .marq {
+    font-size: 12px;
+    top: 30%;
+    right: 27%;
+    width: 28.7%;
+  }
+  #hero {
+    width: 55%;
+    left: -20%;
+  }
+  .hero1 {
+    margin-top: 12em;
+  }
+  .hero1 h2 {
+    font-size: 35px;
+  }
+  .hero1 h5 {
+    font-size: 23px;
+  }
+  .hero1 p {
+    font-size: 16px;
+  }
+  .hero-button {
+    font-size: 12px;
+    height: 35px;
+  }
+  #hero2 {
+    width: 70%;
+  }
+  .projects2 {
+    border-radius: 10px !important;
+  }
+  .project1 h3 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .project1 h5 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .project1 p {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .project1 a {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .moreProjects h2 {
+    font-size: 28px;
+  }
+  .tools {
+    font-size: 26px;
+  }
+  .tools h5 {
+    font-size: 16px;
+  }
+  .tools p {
+    font-size: 11px;
+  }
+  .tools img {
+    width: 50px;
+  }
+  .contact h1 {
+    font-size: 28px;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+  .input-group input,
+  .input-group textarea {
+    font-size: 18px;
+  }
+  .input-group label {
+    font-size: 18px;
+  }
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown) ~ label,
+  .input-group textarea:focus ~ label,
+  .input-group textarea:not(:placeholder-shown) ~ label {
+    font-size: 12px;
+  }
+  .amalsoCardPositionDeco,
+  .amalsoCardPositionDeco1 {
+    display: none;
+  }
+
+  .amAlso2 p {
+    font-size: 31.7px;
+    margin-bottom: 20px !important;
+  }
+  .amalsoCardPosition,
+  .amalsoCardPosition1,
+  .amalsoCardPosition2 {
+    scale: 0.7;
+    left: 45%;
+    transform: translatex(-50%);
+  }
+  .amalsoCardPosition1 {
+    top: 48%;
+    left: 45%;
+    transform: translate(-48%, -50%);
+  }
+  .footer h2 {
+    font-size: 24px;
+  }
+  .footer img {
+    transform: scale(1.3);
+    width: 40px;
+    margin: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  .footer img:hover {
+    transform: scale(1.3);
+  }
+  .footer ul li a {
+    color: #f3eee5;
+    font-size: 18px;
+    font-family: Afacad;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word;
+  }
+  
+  #intro p {
+    font-size: 16px;
+  }
+  #intro img:nth-child(1) {
+    object-fit: contain;
+  }
+  .imgDeco2 {
+    top: -40%;
+    right: -10%;
+  }
+  .owl-carousel img {
+    height: 160px;
+  }
+  
+  .projP {
+    font-family: afacad;
+    font-size: 24.6px;
+  }
+  .brand h3 {
+    font-size: 27.7px;
+  }
+  .brand p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 978px) {
+  .hero1 {
+    margin-top: 11em;
+  }
+}
+
+@media (max-width: 965px) {
+  .hero1 {
+    margin-top: 10em;
+  }
+  .hero1 h2 {
+    font-size: 35px;
+  }
+  .hero1 h5 {
+    font-size: 23px;
+  }
+  .hero1 p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 873px) {
+  .hero1 {
+    margin-top: 10em;
+  }
+  #hero {
+    left: -23%;
+  }
+  .hero1 h2 {
+    font-size: 33px;
+  }
+  .hero1 h5 {
+    font-size: 22px;
+  }
+  .hero1 p {
+    font-size: 18px;
+  }
+  .project1 h3 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .project1 h5 {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .project1 p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .project1 span {
+    font-size: 13px;
+    line-height: normal;
+  }
+  #intro p {
+    font-size: 14px;
+  }
+  #intro img:nth-child(1) {
+    object-fit: contain;
+  }
+  .imgDeco {
+    width: 50%;
+    top: -60%;
+    right: -14%;
+  }
+  .owl-carousel img {
+    height: 160px;
+  }
+  
+  .imgDeco2 {
+    top: -55%;
+    right: -10%;
+  }
+}
+
+@media (max-width: 767px) {
   .container {
     width: 90% !important;
   }
@@ -116,19 +541,20 @@
     width: 5em;
   }
   #hero {
-    width: 65%;
+    width: 30%;
+    left: -7%;
   }
   .hero1 {
     margin-top: 12em;
   }
   .hero1 h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .hero1 h5 {
-    font-size: 27px;
+    font-size: 21px;
   }
   .hero1 p {
-    font-size: 21px;
+    font-size: 18px;
   }
   .hero-button {
     font-size: 15px;
@@ -138,18 +564,57 @@
     width: 70%;
   }
 
-  .marq{
+  .marq {
     font-size: 12px;
     top: 30%;
     right: 41.5%;
     width: 28.7%;
     /* background-color: #ff5900; */
   }
-  .amalsoCardPositionDeco,.amalsoCardPositionDeco1{
+  .amalsoCardPositionDeco,
+  .amalsoCardPositionDeco1 {
     display: none;
   }
-  
-  
+
+  .sectionHeight {
+    height: 100%;
+  }
+  .imgDeco2{
+    top: -18%;
+    right: 0%;
+  }
+  .dMedium{
+    display: block;
+  }
+  .dLarge{
+    display: none;
+  }
+  .dL4{
+    display: none;
+  }
+  .dSmall{
+    display: block;
+  }
+  .dL3{
+    display: none !important;
+  }
+  .dsmall2{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) and (min-width:767px){
+  #hero {
+    width: 48%;
+    /* left: -23%; */
+  }
+}
+
+@media (max-width: 673px) {
+  #hero {
+    width: 35%;
+    left: -7%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -191,7 +656,7 @@
   .hero-button {
     font-size: 11.1px;
     height: 40px;
-    line-height:0
+    line-height: 0;
   }
   .hero-button-img1 {
     width: 30.7px;
@@ -202,7 +667,7 @@
   #hero2 {
     width: 70%;
   }
-  .marq{
+  .marq {
     font-size: 10px;
     top: 29%;
     right: 41.5%;
@@ -218,26 +683,26 @@
   .projectImg h1 {
     font-size: 25.7px;
   }
-  .projects2{
+  .projects2 {
     border-radius: 10px !important;
   }
   .project1 h3 {
     font-size: 16px;
-    line-height:normal
+    line-height: normal;
   }
   .project1 h5 {
     font-size: 18px;
-    line-height:normal
+    line-height: normal;
   }
   .project1 p {
     font-size: 8px;
-    line-height:normal
+    line-height: normal;
   }
   .project1 a {
     font-size: 14px;
-    line-height:normal
+    line-height: normal;
   }
-  .moreProjects h2{
+  .moreProjects h2 {
     font-size: 17.5px;
   }
   .tools {
@@ -249,7 +714,7 @@
   .tools p {
     font-size: 9px;
   }
-  .tools img{
+  .tools img {
     width: 50px;
   }
   .contact h1 {
@@ -259,224 +724,244 @@
     font-size: 14px;
   }
   .input-group input,
-.input-group textarea {
-  font-size: 14px;
-}
-.input-group label {
-  font-size: 14px;
-}
-.input-group input:focus ~ label,
-.input-group input:not(:placeholder-shown) ~ label,
-.input-group textarea:focus ~ label,
-.input-group textarea:not(:placeholder-shown) ~ label {
-  font-size: 9px;
-}
-.btn-submit {
-  width: 200px;
-}
-.amAlso2 p {
-  font-size: 31.7px;
-}
-.amalsoCardPosition,.amalsoCardPosition1,.amalsoCardPosition2{
-  scale: .7;
-  left: 35%;
-  transform: translatex(-50%);
-}
-.amalsoCardPosition1 {
-  top: 48%;
-  left: 35%;
-  transform: translate(-48%,-50%);
-}
-.footer h2 {
-  font-size: 24px;
-}
-.footer img {
-  /* transform: scale(1.3); */
-  width: 40px;
-  margin: 24px;
-  transition: all 0.3s ease-in-out;
-}
-.footer img:hover {
-  transform: scale(1.3);
-}
-.footer ul li a {
-  color: #f3eee5;
-  font-size: 18px;
-  font-family: Afacad;
-  font-weight: 500;
-  text-transform: uppercase;
-  word-wrap: break-word;
-}
-.projP{
-  font-family: afacad;
-  font-size: 24.6px;
-}
-.brand h3{
-  font-size: 27.7px;
-}
-.brand p{
-  font-size: 22px;
-}
-.workExperience h6{
-  font-size: 10.6px;
-}
-.workExperience h1{
-  font-size: 23.5px;
-}
-.workExperience h5{
-  font-size: 18px;
-}
-.workExperience h2,h3{
-  font-size: 16px;
-}
-.workExperience h3{
-  color: #ff5900;
-}
-.workExperience p,li{
-  font-size: 16px;
-}
-.lineSeperator1{
-  height: 17%;
-}
-.lineSeperator{
-  height: 33%;
-}
-.influencer-nav .nav-item {
-  font-size: 16.8px;
-  font-family: afacad;
-  font-weight: 400;
-  text-transform: none !important;
-  word-wrap: break-word;
-}
-#Overview h3 {
-  font-size: 14px;
-  line-height: normal;
-}
-#Overview h2 {
-  font-size: 18px;
-}
-#Overview img {
-  width: 100%;
-}
-#Overview p{
-  font-size: 16px;
-}
-.head6{
-  font-size: 18px;
-}
-.head7{
-  font-size: 30.2px;
-}
-.sectionHeight{
-  height: 100%;
-}
-.card-stack {
-  height: 245px;
-}
-.card-stack p{
-  font-size: 20px;
-}
-.sideImg{
-  padding: 0 !important;
-  bottom: -10%;
-  left: -55%;
-  z-index: -1 !important;
-  scale: .6 !important;
-}
-.sideImg2{
-  bottom: 10%;
-  right: -45%;
-  scale: .7 !important;
-}
-.dLarge{
-  display: none;
-}
-.dSmall{
-  display: block;
-}
-.empathyCard{
-  height: 100%;
-  background-color: #f1f5f9;
-}
-.empathyCard span{
-  font-family: poppins;
-  font-size: 17px;
-}
-.empathyCard p{
+  .input-group textarea {
+    font-size: 14px;
+  }
+  .input-group label {
+    font-size: 14px;
+  }
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown) ~ label,
+  .input-group textarea:focus ~ label,
+  .input-group textarea:not(:placeholder-shown) ~ label {
+    font-size: 9px;
+  }
+  .btn-submit {
+    width: 200px;
+  }
+  .amAlso2 p {
+    font-size: 31.7px;
+  }
+  .amalsoCardPosition,
+  .amalsoCardPosition1,
+  .amalsoCardPosition2 {
+    scale: 0.7;
+    left: 35%;
+    transform: translatex(-50%);
+  }
+  .amalsoCardPosition1 {
+    top: 48%;
+    left: 35%;
+    transform: translate(-48%, -50%);
+  }
+  .footer h2 {
+    font-size: 24px;
+  }
+  .footer img {
+    /* transform: scale(1.3); */
+    width: 40px;
+    margin: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  .footer img:hover {
+    transform: scale(1.3);
+  }
+  .footer ul li a {
+    color: #f3eee5;
+    font-size: 18px;
+    font-family: Afacad;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word;
+  }
+  .projP {
+    font-family: afacad;
+    font-size: 24.6px;
+  }
+  .brand h3 {
+    font-size: 27.7px;
+  }
+  .brand p {
+    font-size: 22px;
+  }
+  .workExperience h6 {
+    font-size: 10.6px;
+  }
+  .workExperience h1 {
+    font-size: 23.5px;
+  }
+  .workExperience h5 {
+    font-size: 18px;
+  }
+  .workExperience h2,
+  h3 {
+    font-size: 16px;
+  }
+  .workExperience h3 {
+    color: #ff5900;
+  }
+  .workExperience p,
+  li {
+    font-size: 16px;
+  }
+  .lineSeperator1 {
+    height: 17%;
+  }
+  .lineSeperator {
+    height: 33%;
+  }
+  .influencer-nav .nav-item {
+    font-size: 16.8px;
+    font-family: afacad;
+    font-weight: 400;
+    text-transform: none !important;
+    word-wrap: break-word;
+  }
+  #Overview h3 {
+    font-size: 14px;
+    line-height: normal;
+  }
+  #Overview h2 {
+    font-size: 18px;
+  }
+  #Overview img {
+    width: 100%;
+  }
+  #Overview p {
+    font-size: 16px;
+  }
+  .head6 {
+    font-size: 18px;
+  }
+  .head7 {
+    font-size: 30.2px;
+  }
+  .sectionHeight {
+    height: 100%;
+  }
+  .card-stack {
+    height: 245px;
+  }
+  .card-stack p {
     font-size: 20px;
-}
-#CompetitorDeepDive h2{
-  font-size: 30px;
-}
-#CompetitorDeepDive ul li{
-  font-size: 16px;
-}
-#CompetitorDeepDive img{
-  scale: 1.1;
-}
-.browser-content p{
-  font-size: 12px;
-}
-.browser-content ul li{
-  font-size: 18px !important;
-}
-#Design span{
-  font-size: 13.2px;
-}
-#Design h2{
-  font-size: 32.3px;
-}
-#Design p{
-  font-size: 16px;
-}
-#Design h5{
-  color: #424955;
-  font-size: 25px;
-}
-.forBrand h5{
-  font-size: 16px !important;
-}
-.workColor h6{
-  font-size: 14px;
-}
-.workColor p{
-  font-size: 14px !important;
-}
-.workColor span{
-  font-size: 12.61px;
+  }
+  .sideImg {
+    padding: 0 !important;
+    bottom: -10%;
+    left: -55%;
+    z-index: -1 !important;
+    scale: 0.6 !important;
+  }
+  .sideImg2 {
+    bottom: 10%;
+    right: -45%;
+    scale: 0.7 !important;
+  }
+  .dMedium {
+    display: none;
+  }
+  .dLarge {
+    display: none;
+  }
+  .dSmall {
+    display: block;
+  }
+  .empathyCard {
+    height: 100%;
+    background-color: #f1f5f9;
+  }
+  .empathyCard span {
+    font-family: poppins;
+    font-size: 17px;
+  }
+  .empathyCard p {
+    font-size: 20px;
+  }
+  #CompetitorDeepDive h2 {
+    font-size: 30px;
+  }
+  #CompetitorDeepDive ul li {
+    font-size: 16px;
+  }
+  #CompetitorDeepDive img {
+    scale: 1.1;
+  }
+  .browser-content p {
+    font-size: 12px;
+  }
+  .browser-content ul li {
+    font-size: 18px !important;
+  }
+  #Design span {
+    font-size: 13.2px;
+  }
+  #Design h2 {
+    font-size: 32.3px;
+  }
+  #Design p {
+    font-size: 16px;
+  }
+  #Design h5 {
+    color: #424955;
+    font-size: 25px;
+  }
+  .forBrand h5 {
+    font-size: 16px !important;
+  }
+  .workColor h6 {
+    font-size: 14px;
+  }
+  .workColor p {
+    font-size: 14px !important;
+  }
+  .workColor span {
+    font-size: 12.61px;
+  }
+
+  #DesignLast h3 {
+    font-size: 20.5px;
+  }
+  #DesignLast li {
+    font-size: 16.6px;
+  }
+  .secImg {
+    scale: 2;
+  }
+  #intro p {
+    font-size: 12px;
+  }
+  #intro img:nth-child(1) {
+    object-fit: contain;
+  }
+  .imgDeco {
+    width: 50%;
+    top: -60%;
+    right: -14%;
+  }
+  .imgDeco2{
+    top: -25%;
+    right: -5%;
+  }
+  .owl-carousel img {
+    height: 160px;
+  }
 }
 
-#DesignLast h3{
-  font-size: 20.5px;
-}
-#DesignLast li{
-  font-size: 16.6px;
-}
-.secImg{
-  scale: 2;
-}
-#intro p{
-  font-size: 12px;
-}
-#intro img:nth-child(1){
-  object-fit: contain;
-}
-.imgDeco{
-  width: 50%;
-  top: -60%;
-  right: -14%;
-}
-.owl-carousel img{
-  height: 160px;
-}
-}
-
-@media (max-width: 424px){
+@media (max-width: 424px) {
   .hero1 h2 {
     font-size: 27px;
   }
-.projP{
-  font-family: afacad;
-  font-size: 21px;
+  .projP {
+    font-family: afacad;
+    font-size: 21px;
+  }
+  .imgDeco2{
+    top: -30%;
+    right: -5%;
+  }
 }
+@media (max-width: 392px) {
+  .hero1 h2 {
+    font-size: 25px;
+  }
 }

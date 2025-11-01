@@ -5,7 +5,7 @@
 body {
   background-color: #f3eee5 !important;
 }
-html.lenis,
+/* html.lenis,
 html.lenis body {
   height: auto;
 }
@@ -26,7 +26,7 @@ html.lenis body {
   transition-property: overflow;
   transition-duration: 1ms;
   transition-behavior: allow-discrete;
-}
+} */
 #influencerNav{
   position: sticky;
   top:5%;
@@ -750,8 +750,11 @@ header .navbar .nav-item .active{
   top: -36% !important;
   left: 54%;
 }
-.dLarge{
+.dLarge,.dL4{
   display: block;
+}
+.dMedium{
+  display: none;
 }
 .dSmall{
   display: none;
@@ -969,4 +972,7 @@ header .navbar .nav-item .active{
 
 .owl-carousel img{
   height: 240px;
+}
+.dL3{
+  display: none;
 }

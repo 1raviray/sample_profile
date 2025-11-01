@@ -1,17 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-const lenis = new Lenis();
+// const lenis = new Lenis();
 
-lenis.on('scroll', () => {
-  ScrollTrigger.update();
-});
+// lenis.on('scroll', () => {
+//   ScrollTrigger.update();
+// });
 
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000);
-});
+// gsap.ticker.add((time) => {
+//   lenis.raf(time * 1000);
+// });
 
-gsap.ticker.lagSmoothing(0);
+// gsap.ticker.lagSmoothing(0);
 
 
 function runanimation(){
@@ -46,7 +46,7 @@ function runanimation(){
     });
 
     gsap.from("#tools img",{
-      opacity:0,scale:0,scrollTrigger:{trigger:"#tools",start:"top 95%",end:"top 50%",scrub:true}
+      opacity:0,scale:0,scrollTrigger:{trigger:"#tools",start:"top 95%",end:"top 70%",scrub:true}
     })
     // gsap.from("#tools h5, #tools p",{
     //   opacity:0,x:-20,stagger:.2,scrollTrigger:{trigger:"#tools",start:"top 95%",end:"top 50%",scrub:true}
@@ -78,8 +78,8 @@ function animateWithGSAP() {
         duration:.3,
         scrollTrigger:{
           trigger:projects,
-          start:"top 90%",
-          end:"top 50%",
+          start:"top 95%",
+          end:"top 80%",
           scrub:true,
           // markers:true
         }
@@ -300,10 +300,4 @@ console.log('GSAP animation started');
 
 window.addEventListener("DOMContentLoaded",runanimation)
 
-// if (document.readyState === "complete") {
-//   runanimation();
-// } else {
-//   window.addEventListener("load", runanimation);
-// }
-  
   
