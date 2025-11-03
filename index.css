@@ -4,10 +4,10 @@
 }
 html,body {
   background-color: #f3eee5 !important;
-  cursor: url('Assets/custom\ cursor.svg') 16 16, auto;
+  cursor: url('Assets/custom\ cursor.svg'), auto;
 }
 button:hover,button:focus,a:hover,a:focus{
-  cursor: url('Assets/custom\ cursor.svg') 16 16, auto;
+  cursor: url('Assets/custom\ cursor.svg'), auto;
 }
 /* html.lenis,
 html.lenis body {
@@ -98,7 +98,7 @@ header .navbar .nav-item .active{
   right: 26.5%;
   width: 28.7%;
 }
-.nav-item {
+.nav-item .nav-link {
   color: #212121;
   font-size: 16.8px;
   font-family: afacad;
