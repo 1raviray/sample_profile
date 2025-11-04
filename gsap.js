@@ -31,7 +31,7 @@ function runanimation(){
       y: 0, opacity: 1, duration: 0.5, stagger: 0.15, ease: "back.in"
     });
   
-    tl.fromTo(".hero-button", { scale: 0.9, opacity: 0 }, {
+    tl.fromTo("#hero-button", { scale: 0.9, opacity: 0 }, {
       scale: 1, opacity: 1, duration: 0.5, ease: "back.in(1.7)"
     });
   
