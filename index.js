@@ -60,8 +60,7 @@ function sendMail(event) {
   const subject = encodeURIComponent("New message from contact form");
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
 
-  // window.location.href = `mailto:karunanjali.gurram@gmail.com?subject=${subject}&body=${body}`;
-  window.location.href = `mailto:raviray66667@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:karunanjali.gurram@gmail.com?subject=${subject}&body=${body}`;
 }
 
 $(".owl-carousel").owlCarousel({
